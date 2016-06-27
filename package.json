@@ -1,0 +1,23 @@
+{
+  "name": "local-web-server-body-parser",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "body-parser",
+  "repository": "https://github.com/local-web-server/body-parser.git",
+  "license": "MIT",
+  "main": "./lib/body-parser.js",
+  "bin": {
+    "body-parser": "bin/cli.js"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "docs": "jsdoc2md -t jsdoc2md/README.md lib/*.js > README.md; echo"
+  },
+  "dependencies": {
+    "koa-bodyparser": "^3.1.0"
+  }
+}
