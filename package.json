@@ -6,9 +6,6 @@
   "repository": "https://github.com/local-web-server/body-parser.git",
   "license": "MIT",
   "main": "./lib/body-parser.js",
-  "bin": {
-    "body-parser": "bin/cli.js"
-  },
   "keywords": [],
   "engines": {
     "node": ">=0.10.0"
