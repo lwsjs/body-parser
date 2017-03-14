@@ -8,13 +8,13 @@
   "main": "./lib/body-parser.js",
   "keywords": [],
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=7.6"
   },
   "scripts": {
     "test": "tape test/*.js",
     "docs": "jsdoc2md -t jsdoc2md/README.md lib/*.js > README.md; echo"
   },
   "dependencies": {
-    "koa-bodyparser": "^3.1.0"
+    "koa-bodyparser": "^4.1.0"
   }
 }
