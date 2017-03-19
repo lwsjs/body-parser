@@ -1,9 +1,9 @@
 {
-  "name": "local-web-server-body-parser",
+  "name": "lws-body-parser",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "0.0.0",
   "description": "body-parser",
-  "repository": "https://github.com/local-web-server/body-parser.git",
+  "repository": "https://github.com/lwsjs/body-parser.git",
   "license": "MIT",
   "main": "./lib/body-parser.js",
   "keywords": [],
