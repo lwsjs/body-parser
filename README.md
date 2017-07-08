@@ -6,8 +6,8 @@
 
 # lws-body-parser
 
-Body parsing middleware for lws, wrapping [koa-bodyparser](https://github.com/koajs/bodyparser). For usage instructions see [here](https://github.com/lwsjs/local-web-server/wiki/How-to-parse-the-body-of-an-incoming-request).
+Body parsing middleware for lws, wrapping [koa-bodyparser](https://github.com/koajs/bodyparser). For usage instructions see [here](https://github.com/lwsjs/local-web-server/wiki/How-to-access-the-body-of-an-incoming-request).
 
 * * *
 
-&copy; 2017 Lloyd Brookes <75pound@gmail.com>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2017 Lloyd Brookes <75pound@gmail.com>.
