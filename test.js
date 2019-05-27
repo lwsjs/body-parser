@@ -1,21 +1,19 @@
-const TestRunner = require('test-runner')
+const Tom = require('test-runner').Tom
 const BodyParser = require('./')
 const Lws = require('lws')
-const request = require('req-then')
-const url = require('url')
-const runner = new TestRunner()
 const a = require('assert')
-const Counter = require('test-runner-counter')
+const fetch = require('node-fetch')
 
-runner.test('simple', async function () {
-  const counter = Counter.create(1)
+const tom = module.exports = new Tom('body-parser')
+
+tom.test('simple', async function () {
+  const actuals = []
   const port = 8000 + this.index
   const lws = new Lws()
-  const One = MiddlewareBase => class extends MiddlewareBase {
+  class One {
     middleware (options) {
       return function (ctx, next) {
-        a.strictEqual(ctx.request.body.one, 'one')
-        counter.pass()
+        actuals.push(ctx.request.body.one)
       }
     }
   }
@@ -23,12 +21,13 @@ runner.test('simple', async function () {
     port,
     stack: [ BodyParser, One ]
   })
-  const reqOptions = url.parse(`http://localhost:${port}/`)
-  reqOptions.method = 'POST'
-  reqOptions.headers = {
-    'content-type': 'application/json'
-  }
-  const response = await request(reqOptions, JSON.stringify({ one: 'one' }))
+  const response = await fetch(`http://localhost:${port}/`, {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json'
+    },
+    body: JSON.stringify({ one: 'one' })
+  })
   server.close()
-  return counter.promise
+  a.deepStrictEqual(actuals, [ 'one' ])
 })

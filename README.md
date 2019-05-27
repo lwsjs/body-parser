@@ -1,7 +1,7 @@
 [![view on npm](https://img.shields.io/npm/v/lws-body-parser.svg)](https://www.npmjs.org/package/lws-body-parser)
 [![npm module downloads](https://img.shields.io/npm/dt/lws-body-parser.svg)](https://www.npmjs.org/package/lws-body-parser)
 [![Build Status](https://travis-ci.org/lwsjs/body-parser.svg?branch=master)](https://travis-ci.org/lwsjs/body-parser)
-[![Dependency Status](https://david-dm.org/lwsjs/body-parser.svg)](https://david-dm.org/lwsjs/body-parser)
+[![Dependency Status](https://badgen.net/david/dep/lwsjs/body-parser)](https://david-dm.org/lwsjs/body-parser)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # lws-body-parser
@@ -10,4 +10,4 @@ Body parsing middleware for lws, wrapping [koa-bodyparser](https://github.com/ko
 
 * * *
 
-&copy; 2017 Lloyd Brookes <75pound@gmail.com>.
+&copy; 2016-19 Lloyd Brookes \<75pound@gmail.com\>.
