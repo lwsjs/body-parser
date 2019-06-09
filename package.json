@@ -1,7 +1,7 @@
 {
   "name": "lws-body-parser",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "body-parser",
   "repository": "https://github.com/lwsjs/body-parser.git",
   "license": "MIT",
