@@ -12,7 +12,7 @@
     "express"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "scripts": {
     "test": "test-runner test.js"
@@ -21,9 +21,9 @@
     "koa-bodyparser": "^4.2.1"
   },
   "devDependencies": {
-    "lws": "^2.0.0",
+    "lws": "^2.0.8",
     "node-fetch": "^2.6.0",
-    "test-runner": "^0.6.0"
+    "test-runner": "^0.8.13"
   },
   "files": [
     "index.js"

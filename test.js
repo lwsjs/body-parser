@@ -1,10 +1,10 @@
 const Tom = require('test-runner').Tom
 const BodyParser = require('./')
 const Lws = require('lws')
-const a = require('assert')
+const a = require('assert').strict
 const fetch = require('node-fetch')
 
-const tom = module.exports = new Tom('body-parser')
+const tom = module.exports = new Tom()
 
 tom.test('simple', async function () {
   const actuals = []
@@ -28,5 +28,5 @@ tom.test('simple', async function () {
     body: JSON.stringify({ one: 'one' })
   })
   lws.server.close()
-  a.deepStrictEqual(actuals, [ 'one' ])
+  a.deepEqual(actuals, [ 'one' ])
 })
