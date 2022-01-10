@@ -1,10 +1,10 @@
-const Tom = require('test-runner').Tom
-const BodyParser = require('./')
-const Lws = require('lws')
-const a = require('assert').strict
-const fetch = require('node-fetch')
+import TestRunner from 'test-runner'
+import BodyParser from 'lws-body-parser'
+import Lws from 'lws'
+import { strict as a } from 'assert'
+import fetch from 'node-fetch'
 
-const tom = module.exports = new Tom()
+const tom = new TestRunner.Tom()
 
 tom.test('simple', async function () {
   const actuals = []
@@ -16,7 +16,7 @@ tom.test('simple', async function () {
       }
     }
   }
-  const lws = Lws.create({
+  const lws = await Lws.create({
     port,
     stack: [ BodyParser, One ]
   })
@@ -30,3 +30,5 @@ tom.test('simple', async function () {
   lws.server.close()
   a.deepEqual(actuals, [ 'one' ])
 })
+
+export default tom
