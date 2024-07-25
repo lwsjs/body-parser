@@ -6,7 +6,7 @@ import fetch from 'node-fetch'
 
 const tom = new TestRunner.Tom()
 
-tom.test('simple', async function () {
+tom.test('middleware correctly receives a parsed json object', async function () {
   const actuals = []
   const port = 8000 + this.index
   class One {
@@ -18,7 +18,7 @@ tom.test('simple', async function () {
   }
   const lws = await Lws.create({
     port,
-    stack: [ BodyParser, One ]
+    stack: [BodyParser, One]
   })
   const response = await fetch(`http://localhost:${port}/`, {
     method: 'POST',
@@ -28,7 +28,7 @@ tom.test('simple', async function () {
     body: JSON.stringify({ one: 'one' })
   })
   lws.server.close()
-  a.deepEqual(actuals, [ 'one' ])
+  a.deepEqual(actuals, ['one'])
 })
 
 export default tom

@@ -11,4 +11,4 @@ Body parsing middleware for lws, wrapping [koa-bodyparser](https://github.com/ko
 
 * * *
 
-&copy; 2016-22 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2016-24 Lloyd Brookes \<75pound@gmail.com\>.
