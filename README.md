@@ -3,7 +3,6 @@
 [![Gihub repo dependents](https://badgen.net/github/dependents-repo/lwsjs/body-parser)](https://github.com/lwsjs/body-parser/network/dependents?dependent_type=REPOSITORY)
 [![Gihub package dependents](https://badgen.net/github/dependents-pkg/lwsjs/body-parser)](https://github.com/lwsjs/body-parser/network/dependents?dependent_type=PACKAGE)
 [![Node.js CI](https://github.com/lwsjs/body-parser/actions/workflows/node.js.yml/badge.svg)](https://github.com/lwsjs/body-parser/actions/workflows/node.js.yml)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # lws-body-parser
 
@@ -11,4 +10,4 @@ Body parsing middleware for lws, wrapping [koa-bodyparser](https://github.com/ko
 
 * * *
 
-&copy; 2016-24 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2016-26 Lloyd Brookes \<75pound@gmail.com\>.
